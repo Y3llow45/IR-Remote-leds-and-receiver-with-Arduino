@@ -1,12 +1,13 @@
 #include <IRremote.h>
+
 int receiver = 13;
-IRrecv irrecv(receiver);
-decode_results results;
 int LED1 = 7;
 int LED2 = 8;
 int LED3 = 9;
 int LED4 = 10;
 int LED5 = 11;
+IRrecv irrecv(receiver);
+decode_results results;
 String hexValue;
 bool bools[] = {false, false, false, false, false};
 bool on = false;
